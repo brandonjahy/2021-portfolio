@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");*{box-sizing:border-box}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{height:100%;width:100%}#main{height:100vh;width:100%}#main div .intro-block{margin:50px}#main div .intro-block h1 .hi{margin:100px;color:#fff}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&family=Nunito:wght@300;400;600;700&display=swap');
+
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background: #013250;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.intro-block {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    color: #fff;
+}
+
+.intro-block .hi {
+    margin: 2rem 0 4rem 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.intro-block .info {
+    margin: 5rem 0;
+    width: 50%;
+    letter-spacing: 3   px;
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+.intro-block .info span {
+    font-weight: 500;
+    color: #1483c4;
+}
+
+.intro-block .email {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.intro-block .email a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #1483c4;
+}
+
+#about {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+
+#about .about-block {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    height: 400px;
+    width: 60%;
+    font-family: 'Inconsolata', monospace;
+}
+
+#about .about-block h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1483c4;
+}
+
+#about .about-block p {
+    font-size: 1.5rem;
+    margin: 20px 0 0 100px;
+    letter-spacing: 1.5;
+    line-height: 1.1;
+    color: #fff;
+}
+
+
+
+#skills {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#skills .skill-block {
+    position: absolute;
+    top: 10%;
+    left: 17%;
+    height: 500px;
+    width: 300px;
+    color: #fff;
+}
+
+#skills .skill-block h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin: 10px 0;
+    color: #1483c4;
+}
+
+#skills .skill-block .list {
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+#skills .skill-block .list li {
+    margin: 15px;
+    font-weight: 500;
+    font-family: 'Inconsolata', monospace;
+}
+
+#skills .image-block {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+#skills .image-block img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 3px solid #1483c4;
+}
+
+#projects {
+    height: 100vh;
+    width: 100%;
+}
+
+#projects .project-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#projects .project-grid .title {
+    grid-area: 1 / 3 / 2 / 6;
+    text-align: center;
+    font-size: 600;
+    font-size: 3rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+#projects .project-grid .project1 {
+    grid-area: 2 / 2 / 4 / 5;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#projects .project-grid .project1:hover {
+    z-index: 6;
+}
+
+#projects .project-grid .project2 {
+    grid-area: 4 / 2 / 8 / 4;
+    background: white;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+
+#projects .project-grid .project3 {
+    grid-area: 2 / 5 / 5 / 7;
+    background: red;
+    height: 100%;
+    width: 100%;
+}
+
+#projects .project-grid .project4 {
+    grid-area: 5 / 4 / 8 / 7;
+    background: green;
+    height: 100%;
+    width: 100%;
+}
+
+#projects .project-grid .modal-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 5;
+}
+
+#projects .project-grid .modal-content .modal-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    width: 50%;
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
+    margin: 0 auto;
+}
+
+#projects .project-grid .modal-content .modal-body {
+    margin: 0 auto;
+    height: 80%;
+    width: 50%;
+    border: 3px solid white;
+    position: relative;
+    display: flex;
+    align-content: flex-end;
+    text-align: center;
+}
+
+#projects .project-grid .modal-content .modal-body img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+} 
+
+#projects .project-grid .modal-content .modal-body .modal-footer {
+    position: absolute;
+    display: flex;
+    align-content: flex-end;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    align-self: flex-end;
+    z-index: 5;
+}
+
+#projects .project-grid  .modal-content .modal-body .modal-footer p {
+    font-size: 1.2rem;
+    padding: 20px 0;
+    align-self: flex-end;
+    background: rgba(0,0,0,.4);
+}
