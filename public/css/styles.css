@@ -200,7 +200,7 @@ body {
 #projects .project-grid .project2 .imgside {
     height: 100%;
     width: 40%;
-    float: left;
+    float: right;
 }
 
 #projects .project-grid .project2 .imgside img {
@@ -209,7 +209,7 @@ body {
 }
 
 #projects .project-grid .project2 .font-block {
-    float: right;
+    float: left;
     height: 100%;
     width: 60%;
     display: flex;
@@ -265,7 +265,7 @@ body {
 #projects .project-grid .project4 .imgside {
     height: 100%;
     width: 40%;
-    float: left;
+    float: right;
 }
 
 #projects .project-grid .project4 .imgside img {
@@ -274,7 +274,7 @@ body {
 }
 
 #projects .project-grid .project4 .font-block {
-    float: right;
+    float: left;
     height: 100%;
     width: 60%;
     display: flex;
