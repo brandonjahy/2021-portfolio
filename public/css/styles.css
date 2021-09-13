@@ -142,55 +142,151 @@ body {
 
 #projects .project-grid {
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#projects img {
+    height: 100px;
+    width: 100px;
 }
 
 #projects .project-grid .title {
-    grid-area: 1 / 3 / 2 / 6;
     text-align: center;
-    font-size: 600;
+    font-weight: 500;
     font-size: 3rem;
+    color: #1483c4;
     font-family: 'Inconsolata', monospace;
 }
 
 #projects .project-grid .project1 {
-    grid-area: 2 / 2 / 4 / 5;
-    background: #000;
-    height: 100%;
+    margin: 50px 0 20px;
+    height: 25%;
     width: 100%;
-    display: flex;
 }
 
-#projects .project-grid .project1:hover {
-    z-index: 6;
+#projects .project-grid .project1 .imgside {
+    height: 100%;
+    width: 40%;
+    float: left;
 }
+
+#projects .project-grid .project1 .imgside img {
+    height: 100%;
+    width: 100%;
+}
+
+#projects .project-grid .project1 .font-block {
+    float: right;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .project-grid .project1 .font-block h3 {
+    font-size: 1rem;
+    color: white;
+}
+
 
 #projects .project-grid .project2 {
-    grid-area: 4 / 2 / 8 / 4;
-    background: white;
+    margin: 20px 0;
+    height: 25%;
+    width: 100%;
+}
+
+#projects .project-grid .project2 .imgside {
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+#projects .project-grid .project2 .imgside img {
     height: 100%;
     width: 100%;
-    z-index: 2;
 }
+
+#projects .project-grid .project2 .font-block {
+    float: right;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .project-grid .project2 .font-block h3 {
+    font-size: 1rem;
+    color: white;
+}
+
 
 
 #projects .project-grid .project3 {
-    grid-area: 2 / 5 / 5 / 7;
-    background: red;
+    margin: 20px 0;
+    height: 25%;
+    width: 100%;
+}
+
+#projects .project-grid .project3 .imgside {
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+#projects .project-grid .project3 .imgside img {
     height: 100%;
     width: 100%;
 }
 
+#projects .project-grid .project3 .font-block {
+    float: right;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .project-grid .project3 .font-block h3 {
+    font-size: 1rem;
+    color: white;
+}
+
+
 #projects .project-grid .project4 {
-    grid-area: 5 / 4 / 8 / 7;
-    background: green;
+    margin: 20px 0;
+    height: 25%;
+    width: 100%;
+}
+
+#projects .project-grid .project4 .imgside {
+    height: 100%;
+    width: 40%;
+    float: left;
+}
+
+#projects .project-grid .project4 .imgside img {
     height: 100%;
     width: 100%;
 }
+
+#projects .project-grid .project4 .font-block {
+    float: right;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .project-grid .project4 .font-block h3 {
+    font-size: 1rem;
+    color: white;
+}
+
 
 #projects .project-grid .modal-content {
     display: none;
@@ -246,11 +342,4 @@ body {
     margin: 0 auto;
     align-self: flex-end;
     z-index: 5;
-}
-
-#projects .project-grid  .modal-content .modal-body .modal-footer p {
-    font-size: 1.2rem;
-    padding: 20px 0;
-    align-self: flex-end;
-    background: rgba(0,0,0,.4);
 }
